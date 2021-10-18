@@ -10,7 +10,7 @@ export class AppComponent implements OnInit  {
   
   ngOnInit() {
     interval(1000).subscribe(count => {
-      console.log(count)
+      // console.log(count)
     })
   }
 }

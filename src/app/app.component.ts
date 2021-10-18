@@ -13,7 +13,7 @@ export class AppComponent implements OnInit  {
   this.mySubscription =  interval(1000).subscribe(count => {
       console.log(count)
       if(count === 10) {
-        this.mySubscription.unsubscribe
+        this.mySubscription.unsubscribe();
       }
     })
   }

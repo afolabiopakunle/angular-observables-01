@@ -11,7 +11,7 @@ export class AppComponent implements OnInit  {
    let custom = new Observable(observer => {
      let count = 0;
      setInterval(() => {
-       observer.next(count);
+       observer.next(count++);
         // count++
      }, 1000)
    });
